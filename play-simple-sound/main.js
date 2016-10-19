@@ -1,7 +1,13 @@
 var player = require('play-sound')(opts = {})
-var async = require('async')
+var asyncWhile = require("async-while");
 
-async.whilst(true,
+
+var myWhile = asyncWhile(function(data) {
+    // synchronous conditional 
+    return true;
+}, function(data) {
+    // loop content goes here 
 player.play('../resources/klassefesten-intro.mp3', function(err){
   if (err) throw err;
-});)
+});
+});
