@@ -13,7 +13,9 @@
   "dependencies": {
     "sensortag": "1.2.2",
     "socket.io-client": "1.4.5",
-    "play-sound": "1.0.0"
+    "play-sound": "1.0.0",
+    "express": "3.x",
+    "bootstrap": "3.3.7"
   },
   "keywords": [
     "sensortag",
